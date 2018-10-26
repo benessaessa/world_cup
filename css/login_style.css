@@ -1,0 +1,17 @@
+body{
+	background-color: black;
+}
+.form_login{
+	margin-top: 9px;
+	background-color: white;
+	padding: 2px 15px 14px 15px;
+	
+}
+.w3-animate-zoom{
+	animation: animatezoom 1.6s;
+}
+.sign_up{
+	padding: 4px 20px;
+	background-color: white;
+	margin-top: 20px;
+}

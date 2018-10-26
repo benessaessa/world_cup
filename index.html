@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Revision</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/w3.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<script src="html5shive.min.js"></script>
+		<script src="js/respond.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+			  <a class="navbar-brand ml-5" href="#">Mo<i class="fa fa-futbol-o fa-lg"></i>ESSA</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-5">
+			  	  <li class="nav-item">
+					<a class="nav-link" onclick="document.getElementById('id02').style.display='block'"><i class="fa fa-user fa-lg"></i>&shy; sign up</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" onclick="document.getElementById('id01').style.display='block'" target="_blank"><i class="fa fa-sign-in fa-lg"></i>&shy; Log in</a>
+				  </li>
+				  <li class="nav-item active">
+					<a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i>&shy; Home <span class="sr-only">(current)</span></a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#"><i class="fa fa-futbol-o fa-lg"></i> Teams</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="videos.html" target="_blank"><i class="fa fa-video-camera fa-lg"></i> Videos</a>
+				  </li>
+				  <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					  <i class="fa fa-search-minus fa-lg"></i>Champions
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				  	  <a class="dropdown-item" href="#">World Cup</a>
+					  <a class="dropdown-item" href="#">Egyption leage</a>
+					  <a class="dropdown-item" href="#">Primire leage</a>
+					  <a class="dropdown-item" href="#">Seria a</a>
+					</div>
+				  </li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0 ml-auto">
+				  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+				  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				</form>
+			  </div>
+			</nav>
+		</div>
+			<br><br>
+				<div id="id01" class="w3-modal">
+					<div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:550px">
+
+					  <div class="w3-center"><br>
+						<span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright w3-black" title="Close Modal">×</span>
+						<h1 class="jumbotron" style="text-align: center;padding: 1rem 1rem;margin-top: -20px">Login Form</h1>
+						<img src="images/avatar.png" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+					  </div>
+
+					  <form class="w3-container">
+							
+							<div class="input-group margin-bottom-sm">
+								<span class="input-group-addon"><i class="fa fa-user fa-lg"></i></span>
+								<input type="text" class="form-control" placeholder="user name" required="required">
+							</div><br>	
+							<div class="input-group margin-bottom-sm">
+								<span class="input-group-addon"><i class="fa fa-key fa-lg"></i></span>
+								<input type="password" class="form-control" placeholder="Password" required="reauired">
+							</div>
+							
+							<div class="form-check">
+								<input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Remember me
+							</div><br>
+								<button class="btn btn-success" type="submit">Log in</button>
+								<button class="btn btn-primary" type="reset">Reset</button>	
+								
+							<hr>
+							<div class="w3-jumbotron" style="text-align: center;padding: 1rem 2rem;">
+							<h2>Log in with social media Accounts</h2>
+							<div>
+								<button class="btn btn-primary"><i class="fa fa-facebook-f fa-lg">
+								</i>&shy; &shy; Facebook</button>
+								<button class="btn btn-success"><i class="fa fa-twitter fa-lg"></i>&shy; &shy; Twitter</button>
+								<button class="btn btn-danger"><i class="fa fa-google-plus fa-lg"></i>&shy; &shy; Google+</button>
+							</div>
+						</div><hr>
+						</form>
+
+					  <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+						<button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-red">Cancel</button>
+						<span class="w3-right w3-padding w3-hide-small">Forgot <a href="#">password?</a></span>
+					  </div>
+
+					</div>
+				  </div>	
+				
+				<div id="id02" class="w3-modal">
+					<div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+
+					  <div class="w3-center"><br>
+						<span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright w3-black" title="Close Modal">×</span>
+						<h1 align="center" class="jumbotron" style="padding: 1rem 1rem;margin-top: -20px">Create New Account</h1>
+						<img src="images/avatar.png" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+					  </div>
+					  <form class="w3-padding-large">
+						<div class="form-row">
+							<div class="input-group margin-bottom-sm col-md-6 wow bounceInLeft" data-wow-duration="2s">
+								  <span class="input-group-addon"><i class="fa fa-user fa-lg"></i></span>
+								  <input type="text" class="form-control" placeholder="First Name">
+							</div>
+							<div class="input-group margin-bottom-sm col-md-6 wow bounceInRight" data-wow-duration="2s">
+								  <span class="input-group-addon"><i class="fa fa-user-circle fa-lg"></i></span>
+								  <input type="text" class="form-control" placeholder="Last Name">
+							</div>
+
+						</div><br>
+
+							<div class="input-group margin-bottom-sm wow bounceInRight" data-wow-duration="2s">
+								<span class="input-group-addon"><i class="fa fa-envelope-o fa-lg"></i></span>
+								<input type="email" class="form-control" placeholder="Your Email">
+							</div>	<br>
+
+							<div class="input-group margin-bottom-sm wow bounceInLeft" data-wow-duration="2.5s">
+								<span class="input-group-addon"><i class="fa fa-phone-square fa-lg"></i></span>
+								<input type="text" class="form-control" placeholder="Phone Number">
+							</div>	<br>
+
+
+							<div class="input-group margin-bottom-sm wow bounceInRight" data-wow-duration="3s">
+								<span class="input-group-addon"><i class="fa fa-key fa-lg"></i></span>
+								<input type="password" class="form-control" placeholder="Password">
+							</div><br>
+
+							<div class="input-group margin-bottom-sm wow bounceInLeft" data-wow-duration="3.5s">
+								<span class="input-group-addon"><i class="fa fa-key fa-lg"></i></span>
+								<input type="password" class="form-control" placeholder="Confirm Password">
+							</div><br>
+								<button class="btn btn-success"><i class="fa fa-sign-in"></i>&shy;
+								 Sign up </button>
+								 <button class="btn btn-primary" style="width: 110px;font-size: 15px;"><i class="fa fa-trash ">&shy; 
+								 Reset</i></button><br><br>
+								<p class="jumbotron" align="center" style="padding: 1rem 1rem;">By clicking the sign up button you agree to our Terms 
+								& Conditions , and Privacy police. </p>
+								
+							</form>
+					  
+					  <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+						<button onclick="document.getElementById('id02').style.display='none'" type="button" class="w3-button w3-red">Cancel</button>
+					  </div>
+
+					</div>
+				  </div>
+					
+					<div class="w3-container">
+						<div class="w3-row">
+							<div class="w3-third">
+								<div class="w3-panel w3-center wow slideInLeft" data-wow-duration="1s">
+									<h1 class="w3 w3-card-4 w3-blue">The best team</h1>
+									<img class="w3-responsive" style="width:100%;height:180px" src="images/bestteam.jpg">
+									<table class="w3-table table-hover">
+										<thead>
+											<tr>
+												<th><i class="fa fa-futbol-o fa-lg"></i> Goals</th>
+												<th><i class="fa fa-legal fa-lg"></i>chance</th>
+												<th>Matches</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>144 Goals</td>
+												<td>320 chance for golals</td>
+												<td>50 Match</td>
+											</tr>
+										</tbody>
+									</table>
+									<button onClick="document.getElementById('id03').style.display='block'" class="btn btn-info">See More</button>
+									<button onClick="this.parentElement.style.display='none'" class="btn btn-danger">Delete</button>
+								</div>
+							</div>
+							
+							<div class="w3-third">
+								<div class="w3-panel w3-center wow slideInDown" data-wow-duration="1s">
+									<h1 class="w3 w3-card-4 w3-blue" align="center">The best Player</h1>
+									<img class="w3-responsive" style="width:100%;height:180px" src="images/salah.jpg">
+									<table class="w3-table table-hover">
+										<thead>
+											<tr>
+												<th><i class="fa fa-futbol-o fa-lg"></i> Goals</th>
+												<th><i class="fa fa-legal fa-lg"></i>Assist</th>
+												<th>Matches</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>44 Goals</td>
+												<td>10 Assist</td>
+												<td>50 Match</td>
+											</tr>
+										</tbody>
+									</table>
+									<button onClick="document.getElementById('id04').style.display='block'" class="btn btn-info">See More</button>
+									<button onClick="this.parentElement.style.display='none'" class="btn btn-danger" class="btn btn-danger">Delete</button>
+								</div>
+							</div>
+							
+							<div class="w3-third">
+								<div class="w3-panel w3-center wow slideInRight" data-wow-duration="1s">
+									<h1 class="w3 w3-card-4 w3-blue">The best Goal</h1>
+									<img class="w3-round-medium" style="width:100%;height:180px" src="images/bestgoal.jpg">
+									<table class="w3-table table-hover">
+										<thead>
+											<tr>
+												<th><i class="fa fa-futbol-o fa-lg"></i> Goal</th>
+												<th><i class="fa fa-legal fa-lg"></i>Team</th>
+												<th><i class="fa fa-legal fa-lg"></i>Against</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Mo Salah</td>
+												<td>Liverpoal</td>
+												<td>Everton</td>
+											</tr>
+										</tbody>
+									</table>
+									<button onclick="document.getElementById('id05').style.display='block'" class="btn btn-info">See More</button>
+									<button onClick="this.parentElement.style.display='none'" 
+									 class="btn btn-danger" class="btn btn-danger">Delete</button>
+								</div>
+							</div>
+						</div>
+					</div><br>
+			
+			<div id="id03" class="w3-modal w3-animate-zoom">
+				<div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:550px">
+
+					<div class="w3-center"><br>
+						<span onclick="document.getElementById('id03').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright w3-black" title="Close Modal">×</span>
+						<h1 class="jumbotron" style="text-align: center;padding: 1rem 1rem;
+						margin-top: -20px">Real Madrid</h1>
+						<img src="images/bestteam.jpg" alt="Avatar" style="width:100%;margin-top: -20px" class="w3-rounded">
+						<h4>The Hero of UEF Champions 3 times 2016,2017,2018</h4>
+						<h4>The Best Couch and the bet Attack</h4>
+					</div>
+
+					<div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+						<button onclick="document.getElementById('id03').style.display='none'" type="button" class="w3-button w3-red">Cancel</button>
+					</div>
+
+				</div>
+			</div>	
+			
+			
+			<div id="id04" class="w3-modal w3-animate-zoom">
+				<div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:550px">
+
+					<div class="w3-center"><br>
+						<span onclick="document.getElementById('id04').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright w3-black" title="Close Modal">×</span>
+						<h1 class="jumbotron" style="text-align: center;padding: 1rem 1rem;
+						margin-top: -20px">Mohamed Salah</h1>
+						<img src="images/salah.jpg" alt="Avatar" style="width:100%;margin-top: -20px" class="w3-rounded">
+						<h4>The Egyption king</h4>
+						<h4>He won the Best player in primire league</h4>
+					</div>
+
+					<div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+						<button onclick="document.getElementById('id04').style.display='none'" type="button" class="w3-button w3-red">Cancel</button>
+					</div>
+
+				</div>
+			</div>	
+				
+						
+			<div id="id05" class="w3-modal w3-animate-zoom">
+				<div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:550px">
+
+					<div class="w3-center"><br>
+						<span onclick="document.getElementById('id05').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright w3-black" title="Close Modal">×</span>
+						<h1 class="jumbotron" style="text-align: center;padding: 1rem 1rem;
+						margin-top: -20px">Mohamed Salah</h1>
+						<img src="images/bestgoal.jpg" alt="Avatar" style="width:100%;margin-top: -20px" class="w3-rounded">
+						<h4>this goal win the prize of Boshkash 2018</h4>
+					</div>
+
+					<div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+						<button onclick="document.getElementById('id05').style.display='none'" type="button" class="w3-button w3-red">Cancel</button>
+					</div>
+
+				</div>
+			</div>	
+				
+				
+				
+				<section class="featch">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-lg-4  col-md-6  col-sm-12  col-xs-12 w3-hover-aqua">
+								<img src="images/treze.jpg" style="width: 50%;height: 90%;float: left;margin-right: 20px;">
+								<p> we use
+									 has been industry approved and has surpassed statistical benchmarks for risk
+									 assessment. </p>
+							</div>
+							<div class="col-lg-4  col-md-6  col-sm-12  col-xs-12 w3-hover-aqua ">
+								<img src="images/egypt.jpg" style="width: 50%;height: 90%;float: left;margin-right: 20px;">
+								<p> we use
+									 has been industry approved and has surpassed statistical benchmarks for risk
+									 assessment. </p>
+							</div>
+							<div class="col-lg-4  col-md-6  col-sm-12  col-xs-12 w3-hover-aqua">
+								<img src="images/eg.jpg" style="width: 50%;height: 90%;float: left;margin-right: 20px;">
+								<p> we use
+									 has been industry approved and has surpassed statistical benchmarks for risk
+									 assessment. </p>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-lg-4  col-md-6  col-sm-12  col-xs-12 w3-hover-aqua">
+								<img src="images/german.jpg" style="width: 50%;height: 90%;float: left;margin-right: 20px;">
+								<p> we use
+									 has been industry approved and has surpassed statistical benchmarks for risk
+									 assessment. </p>
+							</div>
+							<div class="col-lg-4  col-md-6  col-sm-12  col-xs-12 w3-hover-aqua">
+								<img src="images/gotz.jpg" style="width: 50%;height: 90%;float: left;margin-right: 20px;">
+								<p> we use
+									 has been industry approved and has surpassed statistical benchmarks for risk
+									 assessment. </p>
+							</div>
+							<div class="col-lg-4  col-md-6  col-sm-12  col-xs-12 w3-hover-aqua">
+								<img src="images/gotza.jpg" style="width: 50%;height: 90%;float: left;margin-right: 20px;">
+								<p> we use
+									 has been industry approved and has surpassed statistical benchmarks for risk
+									 assessment. </p>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-sm-12  col-lg-4 col-md-6 col-xs-12 w3-hover-aqua">
+								<img src="images/tunis.jpg" style="width: 50%;height: 90%;float: left;margin-right: 20px;">
+								<p> we use
+									 has been industry approved and has surpassed statistical benchmarks for risk
+									 assessment. </p>
+							</div>
+							<div class="col-lg-4  col-md-6  col-sm-12  col-xs-12 w3-hover-aqua">
+								<img src="images/france.jpg" style="width: 50%;height: 90%;float: left;margin-right: 20px;">
+								<p> we use
+									 has been industry approved and has surpassed statistical benchmarks for risk
+									 assessment. </p>
+							</div>
+							<div class="col-lg-4  col-md-6  col-sm-12  col-xs-12 w3-hover-aqua">
+								<img src="images/uragway.jpg" style="width: 50%;height: 90%;float: left;margin-right: 20px;">
+								<p> we use
+									 has been industry approved and has surpassed statistical benchmarks for risk
+									 assessment. </p>
+							</div>
+						</div>
+							
+						</div>
+				</section>
+				
+				<div class="momo" style="height: 400px;width:100%;">
+					<div class="row">
+						<div class="col col-md-12">
+						  <div class="info">
+							<h3 class="w3 w3-animate-left" style="color:#83E314;font-weight: bold;"><i class="fa fa-smile-o fa-lg"></i> Offering a wide range of laboratory services  <i class="fa fa-smile-o fa-lg"></i></h3><br>
+							<p class="lead">Our fully computerised laboratory group offers a high quality, cost-effective service and clinical expertise to local general practitioners and other trusts, hospitals and healthcare providers. Our innovative laboratory services enhance patient health.</p>
+							<a class="btn btn-success btn-lg" href="#">Read More</a>
+						  </div>
+						</div>
+					</div>
+				</div>
+				<br>
+				<section class="jumbotron text-center">
+				  <div class="container">
+					  <div class="row">
+						<div class="col-md-4 col-sm-12 col-xs-12 wow fadeInLeft" data-wow-duration="1s" data-wow-offset="230">
+							<h1 class="fa fa-smile-o fa-2x"> welcome </h1>
+							<p><i class=""></i> Watch to your favourite team . Our team members are highly trained...</p>
+						</div>
+						<div class="col-md-4 col-sm-12 col-xs-12 wow fadeInLeft" data-wow-duration="3s" data-wow-offset="230">
+							<h1 class="fa fa-search fa-2x"> Search </h1>
+							<p>Search about your favourite team or your best player  Our team members are highly trained...</p>
+						</div>
+						<div class="col-md-4 col-sm-12 col-xs-12 wow fadeInLeft" data-wow-duration="5s" data-wow-offset="230">
+							<h1 class="fa fa-thumbs-up fa-2x"> Enjoy</h1>
+							<p>Enjoy Following our site  Our team members are highly trained...</p>
+						</div>
+					  </div>
+					</div>  
+				</section>
+				
+				<div class="inf">
+					<div class="container-fluid" style="text-align: center">
+					  <h1 style="background-color: #8DBD3A;padding: 4px;border-radius: 4px 20px;"><i class="fa fa-flag-o fa-lg"></i>  World Cup is the Dream for every Player
+					  	<i class="fa fa-eye fa-lg"></i></h1><br>
+						<div class="row">
+							<div class="col-md-4 col-sm-12 col-xs-12">
+								<div class="service">
+									<h1><i class="fa fa-flag-checkered fa-lg"></i></h1>
+									<h1>The largest sport Action in the world</h1><br>
+									<img class="rounded-circle" src="images/[002006].jpg" style="width: 250px;height: 250px">
+									<p class="lead" style="margin-top: 15px;">We’ve done our research to ensure that the medical laboratory equipment we use.</p><br>
+									<a class="btn btn-success btn-lg" href="#">Read More</a>
+								</div>
+							</div>
+
+							<div class="col-md-4 col-sm-12 col-xs-12">
+								<div class="service">
+									<h1><i class="fa fa-map-marker fa-lg"></i></h1>
+									<h1>It is held in Russia in 15/6/2018 </h1><br>
+									<img src="images/braz.jpg" class="rounded-circle" style="width: 250px;height: 250px">
+									<p class="lead" style="margin-top: 15px;">We’ve done our research to ensure that the medical laboratory equipment we use.</p><br>
+									<a class="btn btn-success btn-lg" href="#">Read More</a> 
+								</div>
+							</div>
+
+							<div class="col-md-4 col-sm-12 col-xs-12">
+								<div class="service">
+									<h1><i class="fa fa-futbol-o fa-lg"></i></h1>
+									<h1>32 Country involve in this action </h1><br>
+									<img src="images/france.jpg" class="rounded-circle" style="width: 250px;height: 250px;">
+									<p class="lead" style="margin-top: 15px;">We’ve done our research to ensure that the medical laboratory equipment we use.</p><br>
+									<a class="btn btn-success btn-lg" href="#">Read More</a> 
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<br>
+			 	<section class="captain">
+			 		<div class="container text-center">
+						 <div class="row">
+							<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 wow rotateIn"
+							data-wow-duration="2s" data-wow-offset="500">
+								<div class="w3-card-4 w3-red w3-border-0 w3-hover-aqua">
+									<div class="w3-container w3-center">
+									  <h2>Egypt</h2>
+									  <img src="images/mo.jpg" class=" w3-circle" alt="Avatar" style="width:100%;height: 177px">
+									  <h5>Mohamed Salah</h5>
+									  <div class="progress">
+									  	<div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 96%;">
+									  		Power : 96%
+									  	</div>
+									  </div><br>
+									  <span>
+									  		<i class="fa fa-star fa-lg"></i>
+									  		<i class="fa fa-star fa-lg"></i>
+									  		<i class="fa fa-star fa-lg"></i>
+									  		<i class="fa fa-star fa-lg"></i>
+									  		<i class="fa fa-star fa-lg"></i>
+									  </span><br><br>
+									  <p><i class="fa fa-futbol-o fa-lg"></i> Club : Liverpool</p>
+									  <p><i class="fa fa-thumbs-up"> 960,895</i></p>
+									  <button class="btn btn-success">Profile</button><br><br>
+									</div>
+								</div>
+							</div><br><br>
+							
+							<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 wow rotateIn"
+							data-wow-duration="2s" data-wow-offset="500">
+								<div class="w3-card-4 w3-white w3-border-0 w3-hover-aqua">
+									<div class="w3-container w3-center">
+									  <h2>Alargnteen</h2>
+									  <img src="images/messi.jpg" class=" w3-circle" alt="Avatar" style="width:100%;height: 177px">
+									  <h5>Messi</h5>
+									  <div class="progress">
+									  	<div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 94%;">
+									  		Power : 94%
+									  	</div>
+									  </div><br>
+									  <span>
+									  		<i class="fa fa-star fa-lg"></i>
+									  		<i class="fa fa-star fa-lg"></i>
+									  		<i class="fa fa-star fa-lg"></i>
+									  		<i class="fa fa-star fa-lg"></i>
+									  		<i class="fa fa-star-half-full fa-lg"></i>
+									  </span><br><br>
+									  <p><i class="fa fa-futbol-o fa-lg"></i> Club : Barcalnoa</p>
+									  <p><i class="fa fa-thumbs-up"> 60,132</i></p>
+									  <button class="btn btn-danger">Profile</button><br><br>
+									</div>
+								</div>
+							</div><br><br>
+							
+							<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 wow rotateIn"
+							data-wow-duration="2s" data-wow-offset="500">
+								<div class="w3-card-4 w3-green w3-border-0 w3-hover-aqua">
+									<div class="w3-container w3-center">
+									  <h2>England Captain</h2>
+									  <img src="images/rooney.jpg" class=" w3-circle" alt="Avatar" style="width:100%;height: 177px">
+									  <h5>Rooney</h5>
+									  <div class="progress">
+									  	<div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 87%;">
+									  		Power : 87%
+									  	</div>
+									  </div><br>
+									  <span>
+									  		<i class="fa fa-star fa-lg"></i>
+									  		<i class="fa fa-star fa-lg"></i>
+									  		<i class="fa fa-star fa-lg"></i>
+									  		<i class="fa fa-star fa-lg"></i>
+									  		<i class="fa fa-star-o fa-lg"></i>
+									  </span><br><br>
+									  <p><i class="fa fa-futbol-o fa-lg"></i> Club : Watford</p>
+									  <p><i class="fa fa-thumbs-up"> 40,230</i></p>
+									  <button class="btn btn-primary">Profile</button><br><br>
+									</div>
+								</div>
+							</div><br><br>
+							
+							<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 wow rotateIn"
+							data-wow-duration="2s" data-wow-offset=" 400">
+								<div class="w3-card-4 w3-yellow w3-border-0 w3-hover-aqua">
+									<div class="w3-container w3-center">
+									  <h2>Espani Captain</h2>
+									  <img src="images/ramos.jpg" class=" w3-circle" alt="Avatar" style="width:100%;height: 177px">
+									  <h5>Ramos</h5>
+									  <div class="progress">
+									  	<div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%;">
+									  		Power : 90%
+									  	</div>
+									  </div><br>
+									  <span>
+									  		<i class="fa fa-star fa-lg"></i>
+									  		<i class="fa fa-star fa-lg"></i>
+									  		<i class="fa fa-star fa-lg"></i>
+									  		<i class="fa fa-star fa-lg"></i>
+									  		<i class="fa fa-star-o fa-lg"></i>
+									  </span><br><br>
+									  <p><i class="fa fa-futbol-o fa-lg"></i> Club : Real Madrid</p>
+									  <p><i class="fa fa-thumbs-up"> 30,964</i></p>
+									  <button class="btn btn-success">Profile</button><br><br>
+									</div>
+								</div>
+							</div><br><br>
+							
+						</div>
+						<br>
+						<div class="row justify-content-around">
+							<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 wow rotateInUpLeft"
+							data-wow-duration="2s" data-wow-offset=" 400">
+								<div class="w3-card-4 w3-white w3-border-0 w3-hover-aqua">
+									<div class="w3-container w3-center">
+									  <h2>Netherland</h2>
+									  <img src="images/vanpersi.jpg" class=" w3-circle" alt="Avatar" style="width:100%;height: 177px">
+									  <h5>Van Persi</h5>
+									  <div class="progress">
+									  	<div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 88%;">
+									  		Power : 88%
+									  	</div>
+									  </div><br>
+									  <span>
+									  		<i class="fa fa-star fa-lg"></i>
+									  		<i class="fa fa-star fa-lg"></i>
+									  		<i class="fa fa-star fa-lg"></i>
+									  		<i class="fa fa-star-o fa-lg"></i>
+									  		<i class="fa fa-star-o fa-lg"></i>
+									  </span><br><br>
+									  <p><i class="fa fa-futbol-o fa-lg"></i> Club : Man United</p>
+									  <p><i class="fa fa-thumbs-up"> 63,196</i></p>
+									  <button class="btn btn-danger">Profile</button><br><br>
+									</div>
+								</div>
+							</div><br><br>
+							
+							<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 wow rotateInUpLeft"
+							data-wow-duration="2s" data-wow-offset=" 400">
+								<div class="w3-card-4 w3-green w3-border-0 w3-hover-aqua">
+									<div class="w3-container w3-center">
+									  <h2>Brazile</h2>
+									  <img src="images/braz.jpg" class=" w3-circle" alt="Avatar" style="width:100%;height: 177px">
+									  <h5>Nemare</h5>
+									  <div class="progress">
+									  	<div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 93%;">
+									  		Power : 93%
+									  	</div>
+									  </div><br>
+									  <span>
+									  		<i class="fa fa-star fa-lg"></i>
+									  		<i class="fa fa-star fa-lg"></i>
+									  		<i class="fa fa-star fa-lg"></i>
+									  		<i class="fa fa-star fa-lg"></i>
+									  		<i class="fa fa-star-o fa-lg"></i>
+									  </span><br><br>
+									  <p><i class="fa fa-futbol-o fa-lg"></i> Club : Paris sanjer man</p>
+									  <p><i class="fa fa-thumbs-up"> 89,798</i></p>
+									  <button class="btn btn-primary">Profile</button><br><br>
+									</div>
+								</div>
+							</div><br><br>
+							
+							<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 wow rotateInUpLeft"
+							data-wow-duration="2s" data-wow-offset=" 400">
+								<div class="w3-card-4 w3-yellow w3-border-0 w3-hover-aqua">
+									<div class="w3-container w3-center">
+									  <h2>Uruguay Captain</h2>
+									  <img src="images/suarez.jpg" class=" w3-circle" alt="Avatar" style="width:100%;height: 177px">
+									  <h5>Suarez</h5>
+									  <div class="progress">
+									  	<div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 92%;">
+									  		Power : 92%
+									  	</div>
+									  </div><br>
+									  <span>
+									  		<i class="fa fa-star fa-lg"></i>
+									  		<i class="fa fa-star fa-lg"></i>
+									  		<i class="fa fa-star fa-lg"></i>
+									  		<i class="fa fa-star fa-lg"></i>
+									  		<i class="fa fa-star-half-empty fa-lg"></i>
+									  </span><br><br>
+									  <p><i class="fa fa-futbol-o fa-lg"></i> Club : Barcalona</p>
+									  <p><i class="fa fa-thumbs-up"> 71,634</i></p>
+									  <button class="btn btn-success">Profile</button><br><br>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 wow rotateInUpLeft"
+							data-wow-duration="2s" data-wow-offset=" 400">
+								<div class="w3-card-4 w3-red w3-border-0 w3-hover-aqua">
+									<div class="w3-container w3-center">
+									  <h2>Germane</h2>
+									  <img src="images/klose.jpg" class=" w3-circle" alt="Avatar" style="width:100%;height: 177px">
+									  <h5>Klose</h5>
+									  <div class="progress">
+									  	<div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 86%;">
+									  		Power : 86%
+									  	</div>
+									  </div><br>
+									  <span>
+									  		<i class="fa fa-star fa-lg"></i>
+									  		<i class="fa fa-star fa-lg"></i>
+									  		<i class="fa fa-star fa-lg"></i>
+									  		<i class="fa fa-star fa-lg"></i>
+									  		<i class="fa fa-star-o fa-lg"></i>
+									  </span><br><br>
+									  <p><i class="fa fa-futbol-o fa-lg"></i> Club : Bayern Muntion</p>
+									  <p><i class="fa fa-thumbs-up"> 33,810</i></p>
+									  <button class="btn btn-success">Profile</button><br><br>
+									</div>
+								</div>
+							</div><br><br>
+						</div>
+					 </div>	
+			 	</section>	 		
+			 	<section class="feedback">
+			 		<div class="container">
+		 		  
+			 		  <h1 style="text-align: center">Send Feedback</h1><br>
+			 		  
+			 			<div class="row">
+			 			
+			 				<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 text-cente wow slideInLeft" 
+			 				data-wow-duration="1s"data-wow-offset="300"><br>
+			 					<form>
+			 						<span><i class="fa fa-user"></i> Name: </span><input type="text" placeholder="Name" required="required"><br><br>
+			 						<span><i class="fa fa-envelope-o "></i> Mail: &shy; &shy;</span>
+			 						<input required="required" type="email" placeholder="Mail"><br><br>
+			 						 <span>Message: &shy;</span><textarea required placeholder="your message" cols="20" rows="5"></textarea><br><br>
+									<button class="btn btn-success btn-sm" style="margin-left: 40px;">Send FeedBack</button>
+			 					</form>
+			 				</div>
+			 				
+							<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 text-center wow slideInDown"
+							 data-wow-duration="1s" data-wow-offset="300"><br>
+								<ul class="list-unstyled">
+									<li><a href="#" style="text-decoration: underline;">World Cup</a></li><hr>
+									<li><a href="#" style="text-decoration: underline;">Egyption Champions leage</a></li><hr>
+									<li><a href="#" style="text-decoration: underline;">Last News about The cup</a></li><hr>
+									<li><a href="#" style="text-decoration: underline;">Teams that involved in this big Action sport</a></li><hr>
+									<li><a href="#" style="text-decoration: underline;">Teams that won this Cup</a></li><hr>
+								</ul>
+							</div>
+			 				
+							<div class="col-lg-4 col-md-6-col-sm-12 col-xs-12 wow slideInLeft" 
+							data-wow-duration="1s" data-wow-offset="300">
+								<ul class="w3-ul">
+									<li class="list-group-item-light">
+										<h1>Personal Informatio</h1></li>
+									<li><i class="fa fa-user-circle-o fa-lg"><b> Name : MOHAMED ESSA </b></i></li><br>	
+									<li><i class="fa fa-phone fa-lg"> Contact Us : 0111 42 052 43</i></li><br>
+									<li><i class="fa fa-map-marker fa-lg">
+										Location : Minia 
+									</i></li><br>
+								</ul>
+								<div class="links">
+									<a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+									<a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+									<a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+								</div>
+							</div>
+							
+			 			</div>
+
+			 	</section>
+			 	<div>
+			 		<footer style="background-color: black;color: white;text-align: center;padding: 10px;">
+			 			<h5>Copy Right &copy; Mohamed Essa</h5>
+			 		</footer>
+			 	</div>
+				 		 		
+			<script src="js/jquery-3.3.1.min.js"></script>
+			<script src="js/popper.min.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+			<script src="js/wow.min.js"></script>
+			<script>new WOW().init();</script>
+	</body>
+</html>
